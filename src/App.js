@@ -1,4 +1,3 @@
-import logo from '../src/assets/img/logo.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
