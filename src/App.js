@@ -15,11 +15,12 @@ import timelineElements from './components/timelineElements';
 function App() {
   return (
     <div className="App">
+      <title>My Portfolio</title>
       <NavBar />
       <Banner />
       <Skills />
-      <Projects />
       <TimeLine />
+      <Projects />
       <Contact />
       <Footer />
      

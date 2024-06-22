@@ -56,7 +56,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
+                
                 <h1>{`Hi! I'm Akshata,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "a Full-Stack Developer",  "a Python Developer", "an ML enthusiat" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I am a passionate and driven Full Stack Developer with expertise in Java and Python, a knack for creating efficient and scalable web applications, and a strong foundation and interest in Machine Learning. With a solid educational background and hands-on experience in both development and data science, I am committed to leveraging technology to solve complex problems.</p>
                   
