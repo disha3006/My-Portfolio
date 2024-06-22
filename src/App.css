@@ -796,5 +796,254 @@ margin-top: 40px;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/************ Responsive Css ************/
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  nav.navbar a.navbar-brand {
+    width: 30%;
+  }
+  
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .banner {
+    padding: 150px 0 60px 0;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .banner button {
+    font-size: 16px;
+  }
+
+  .skill h2, .project h2, .contact h2 {
+    font-size: 30px;
+  }
+
+  .skill p, .project p, .contact p {
+    font-size: 16px;
+  }
+
+  .skill-slider, .project .nav.nav-pills {
+    width: 100%;
+  }
+
+  .project p {
+    width: 80%;
+  }
+
+  .proj-imgbx img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newsletter-bx {
+    padding: 40px 20px;
+    margin-top: 0;
+  }
+
+  .newsletter-bx h3 {
+    font-size: 24px;
+  }
+
+  .newsletter-bx .new-email-bx button {
+    padding: 10px 20px;
+  }
+}
+
+/* Tablets (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  nav.navbar a.navbar-brand {
+    width: 20%;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 15px;
+    font-size: 16px;
+  }
+
+  .banner {
+    padding: 200px 0 80px 0;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .banner p {
+    font-size: 17px;
+  }
+
+  .banner button {
+    font-size: 18px;
+  }
+
+  .skill h2, .project h2, .contact h2 {
+    font-size: 36px;
+  }
+
+  .skill p, .project p, .contact p {
+    font-size: 17px;
+  }
+
+  .skill-slider, .project .nav.nav-pills {
+    width: 90%;
+  }
+
+  .project p {
+    width: 70%;
+  }
+
+  .proj-imgbx img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newsletter-bx {
+    padding: 60px 30px;
+    margin-top: -60px;
+  }
+
+  .newsletter-bx h3 {
+    font-size: 30px;
+  }
+
+  .newsletter-bx .new-email-bx button {
+    padding: 15px 30px;
+  }
+}
+
+/* Small Desktops (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav.navbar a.navbar-brand {
+    width: 12%;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 20px;
+    font-size: 17px;
+  }
+
+  .banner {
+    padding: 220px 0 90px 0;
+  }
+
+  .banner h1 {
+    font-size: 55px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  .banner button {
+    font-size: 19px;
+  }
+
+  .skill h2, .project h2, .contact h2 {
+    font-size: 40px;
+  }
+
+  .skill p, .project p, .contact p {
+    font-size: 18px;
+  }
+
+  .skill-slider, .project .nav.nav-pills {
+    width: 80%;
+  }
+
+  .project p {
+    width: 60%;
+  }
+
+  .proj-imgbx img {
+    width: 90%;
+    height: auto;
+  }
+
+  .newsletter-bx {
+    padding: 70px 40px;
+    margin-top: -80px;
+  }
+
+  .newsletter-bx h3 {
+    font-size: 34px;
+  }
+
+  .newsletter-bx .new-email-bx button {
+    padding: 18px 40px;
+  }
+}
+
+/* Medium Desktops (1200px to 1699px) */
+@media (min-width: 1200px) and (max-width: 1699px) {
+  nav.navbar a.navbar-brand {
+    width: 10%;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 22px;
+    font-size: 17px;
+  }
+
+  .banner {
+    padding: 240px 0 95px 0;
+  }
+
+  .banner h1 {
+    font-size: 60px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  .banner button {
+    font-size: 19px;
+  }
+
+  .skill h2, .project h2, .contact h2 {
+    font-size: 42px;
+  }
+
+  .skill p, .project p, .contact p {
+    font-size: 18px;
+  }
+
+  .skill-slider, .project .nav.nav-pills {
+    width: 85%;
+  }
+
+  .project p {
+    width: 60%;
+  }
+
+  .proj-imgbx img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newsletter-bx {
+    padding: 80px 50px;
+    margin-top: -100px;
+  }
+
+  .newsletter-bx h3 {
+    font-size: 38px;
+  }
+
+  .newsletter-bx .new-email-bx button {
+    padding: 20px 50px;
+  }
+}
 
 
