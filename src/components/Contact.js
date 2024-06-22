@@ -106,7 +106,7 @@ export const Contact = () => {
                   placeholder="Message"
                   onChange={(e) => onFormUpdate("message", e.target.value)}
                   className="form-control messageinput" // Bootstrap class 'form-control' and custom class 'messageinput'
-                  style={{ width: "90%" }} // Set the width as needed
+                  style={{ width: "95%" }} // Set the width as needed
                 ></textarea>
                 <button type="submit">
                   <span>{buttonText}</span>
