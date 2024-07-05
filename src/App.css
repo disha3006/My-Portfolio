@@ -138,10 +138,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 .social-icon {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 14px;
+    gap: 9px;
+    
 }
 .social-icon a {
     width: 42px;
@@ -255,6 +258,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+.launch-icon {
+  margin-left: 12px; 
+}
+
 .logo{
   width: 80px;
 }
@@ -320,9 +327,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 } */
 
 .banner img {
-  width: 80%;
+  width: 70%;
   box-shadow: 2px 4px 8px rgba(238, 230, 230, 0.1); 
   border-radius: 2%;
+  margin-top: 40px;;
+  margin-left: 70px;
   border: 5px solid #151515;
 }
 
@@ -340,6 +349,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
   color: #86c0f0;
+}
+@keyframes circle-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.connect-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-button .highlight {
+  position: relative;
+  z-index: 1;
+}
+
+.connect-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.495);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: circle-animation 1.5s infinite;
 }
 
 /************ Skills Css ************/
@@ -468,7 +514,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-/* 
+
 .project .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
@@ -482,7 +528,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
-} */
+}
 
 /* Default gradient */
 .project .nav.nav-pills .nav-link::before {
@@ -508,8 +554,8 @@ margin-top: 40px;
 }
 
 .proj-imgbx img {
-  width: 415px; /* Ensure all project images have the same width */
-  height: 250px; /* Maintain aspect ratio */
+  width: 415px; 
+  height: 250px;
   display: block;
 }
 
