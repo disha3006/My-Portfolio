@@ -20,7 +20,7 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={4} className="text-center">
             <div className="contact-us">
-              <p><b>Contact Me !</b></p>
+              <p><b>Contact Me</b></p>
               <p><FontAwesomeIcon icon={faEnvelope} />  :  <a href="mailto:akshata.jedhe@gmail.com">akshata.jedhe@gmail.com</a></p>
               <p><FontAwesomeIcon icon={faPhone} />  :  <a href="tel:+62333405844">+62333405844</a></p>
             </div>
@@ -31,7 +31,7 @@ export const Footer = () => {
               <a href="https://github.com/akshataj28" target="_blank"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://www.instagram.com/_akshiiii._/" target="_blank"><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Akshata Jedhe</p>
+          
           </Col>
         </Row>
       </Container>
