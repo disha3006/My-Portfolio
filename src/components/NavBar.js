@@ -4,6 +4,7 @@ import logo from '../assets/img/logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github.png';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import LaunchIcon from '@mui/icons-material/Launch';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -36,9 +37,6 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <span>
-            <img src={logo} alt="Logo" className="logo" />
-          </span>
           <span className="tagline">My Portfolio</span>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -52,10 +50,11 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/akshata-jedhe-7ab5b11a4%20/" target="_blank"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/akshataj28" target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/_akshiiii._/" target="_blank"><img src={navIcon3} alt="" /></a>
+               
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              <a href='https://drive.google.com/file/d/1rgJ1_boFruONonGc3QJfNL0OWlUBK4Tv/view?usp=sharing' target="_blank">
+                <button className="vvd"><span>Resume  <LaunchIcon /></span></button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
