@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import headerImg from "../assets/img/header-img.svg";
 import headerImg from "../assets/img/photo.jpeg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
@@ -10,10 +9,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200 - Math.random() * 50); // Faster typing speed
   const [index, setIndex] = useState(1);
-  const toRotate = [ "a Full-Stack Developer",  "a Python Developer", "an ML enthusiat" ];
-  const period = 2000;
+  const toRotate = ["a Full-Stack Developer", "a Python Developer", "an ML enthusiast"];
+  const period = 1000; // Faster rotation period
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -42,7 +41,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(200 - Math.random() * 50); // Reset typing speed after deletion
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -50,33 +49,27 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
+      <img src={headerImg} alt="Header Img"/>
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+        <Row className="align-items-center">
+          <Col xs={12} md={6} xl={11}>
             <TrackVisibility>
+            
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                
-                <h1>{`Hi! I'm Akshata,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "a Full-Stack Developer",  "a Python Developer", "an ML enthusiat" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a passionate and driven Full Stack Developer with expertise in Java and Python, a knack for creating efficient and scalable web applications, and a strong foundation and interest in Machine Learning. With a solid educational background and hands-on experience in both development and data science, I am committed to leveraging technology to solve complex problems.</p>
+              
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   
+                  <h1>{`Hi! I'm Akshata,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "a Full-Stack Developer",  "a Python Developer", "an ML enthusiast" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>
+                    I am a driven <span className="highlight-1"> Full Stack Developer </span> with expertise in <span className="highlight-1">Java and Python</span>, a knack for creating efficient and scalable web applications, and a strong foundation and interest in <span className="highlight-2"> Machine Learning</span>. With a solid educational background and hands-on experience in both <span className="highlight-3">Development and Data Science</span>, I am committed to leveraging technology to <span className="highlight-3">solve complex problems</span>.
+                  </p>                  <div className="highlight-container">
                     <button className="connect-button">
-                      Let’s Connect <a href="#connect"><ArrowRightCircle size={25} /></a> 
+                    <a href="#connect"> Let’s Connect <ArrowRightCircle size={25} /></a>
                     </button>
-                  </div>}
+                  
+                  </div>
+                </div>}
             </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            {/* <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>
-                }
-            </TrackVisibility> */}
-                <div>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>
           </Col>
         </Row>
       </Container>
