@@ -4,14 +4,14 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 app.use(cors()); // Enable CORS for all routes
+app.use(express.json()); // To parse incoming JSON requests
 
-app.use(express.json());
-
+// Setup Nodemailer transport
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "akshata.jedhe@gmail.com",
-    pass: "Asj@12345asj"
+    user: "jedhedisha14@gmail.com", // Replace with your email
+    pass: "Dishaj123"    // Replace with your email password (or use app password if 2FA is enabled)
   },
 });
 
@@ -23,28 +23,36 @@ contactEmail.verify((error) => {
   }
 });
 
+// Define the contact POST route
 app.post("/contact", (req, res) => {
-  const name = req.body.firstName + ' ' + req.body.lastName;
-  const email = req.body.email;
-  const message = req.body.message;
-  const phone = req.body.phone;
+  const { firstName, lastName, email, phone, message } = req.body;
+
+  const name = firstName + ' ' + lastName;
   const mail = {
     from: email,
-    to: "akshata.jedhe@gmail.com",
+    to: "jedhedisha14@gmail.com", // Replace with your email
     subject: "Contact Form Submission - Portfolio",
-    html: `<p>Name: ${name}</p>
-           <p>Email: ${email}</p>
-           <p>Phone: ${phone}</p>
-           <p>Message: ${message}</p>`,
+    html: `
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone}</p>
+      <p><strong>Message:</strong> ${message}</p>
+    `,
   };
-  contactEmail.sendMail(mail, (error) => {
+
+  // Send the email
+  contactEmail.sendMail(mail, (error, info) => {
     if (error) {
       console.log(error);
-      res.status(500).json({ error: 'Internal Server Error' });
+      res.status(500).json({ message: "Something went wrong, please try again later." });
     } else {
-      res.json({ code: 200, status: "Message Sent" });
+      console.log("Message sent: " + info.response);
+      res.status(200).json({ code: 200, message: "Message sent successfully!" });
     }
   });
 });
 
-app.listen(5000, () => console.log("Server Running on port 3000"));
+// Start the server
+app.listen(5000, () => {
+  console.log("Server Running on port 5000");
+});

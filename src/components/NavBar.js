@@ -47,12 +47,12 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/akshata-jedhe-7ab5b11a4%20/" target="_blank"><img src={navIcon1} alt="" /></a>
-                <a href="https://github.com/akshataj28" target="_blank"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/_akshiiii._/" target="_blank"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/disha-jedhe" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/disha3006" target="_blank"><img src={navIcon2} alt="" /></a>
+                <a href="https://www.instagram.com/disha30.06/" target="_blank"><img src={navIcon3} alt="" /></a>
                
               </div>
-              <a href='https://drive.google.com/file/d/1rgJ1_boFruONonGc3QJfNL0OWlUBK4Tv/view?usp=sharing' target="_blank">
+              <a href='https://drive.google.com/file/d/1tk9f5QvExhp7c4SDyxYYY435CkBrS92s/view?usp=sharing' target="_blank">
                 <button className="vvd"><span>Resume  <LaunchIcon /></span></button>
               </a>
             </span>

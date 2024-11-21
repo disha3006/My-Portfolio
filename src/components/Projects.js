@@ -25,40 +25,27 @@ export const Projects = () => {
       imgUrl: projImg6,
     },
     {
-      about: "ML for Research",
-      title: "Enhancing Single-Cell RNA Sequencing Analysis for Neurodegenerative Disease Research",
+      about: "Recipe-Radar",
+      title: "Search recipes based on your diet and allergies!",
       description: "Design & Development",
       date: "Jan’24-Apr’24",
       imgUrl: projImg1,
     },
     {
-      about: "Image Similarity",
+      about: "Face Recognition Attendance",
       title: "Image Analysis & Similarity-Based Retrieval",
       description: "Design & Development",
       date: "Aug’23-Nov’23",
       imgUrl: projImg2,
     },
     {
-      about: "NLP-based Web App",
-      title: "Conversational AI Platform - Natural Language Processing",
+      about: "My Portfolio",
+      title: "A fully functional portfolio app",
       description: "Design & Development",
       date: "Aug’21 - Apr’22",
       imgUrl: projImg3,
     },
-    {
-      about: "ML-based Web App",
-      title: "Carify - Machine Learning based Web Application",
-      description: "Design & Development",
-      date: "Sept’20 - Apr’21",
-      imgUrl: projImg4,
-    },
-    {
-      about: "Facial Expression Detection",
-      title: "Facial Expression detector",
-      description: "Design & Development",
-      date: "Oct'20-Nov’20",
-      imgUrl: projImg5,
-    },
+    
   
   ];
 

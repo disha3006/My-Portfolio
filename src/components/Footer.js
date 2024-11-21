@@ -21,15 +21,15 @@ export const Footer = () => {
           <Col size={12} sm={4} className="text-center">
             <div className="contact-us">
               <p><b>Contact Me</b></p>
-              <p><FontAwesomeIcon icon={faEnvelope} />  :  <a href="mailto:akshata.jedhe@gmail.com">akshata.jedhe@gmail.com</a></p>
-              <p><FontAwesomeIcon icon={faPhone} />  :  <a href="tel:+62333405844">+62333405844</a></p>
+              <p><FontAwesomeIcon icon={faEnvelope} />  :  <a href="mailto:jedhedisha@gmail.com">jedhedisha@gmail.com</a></p>
+              <p><FontAwesomeIcon icon={faPhone} />  :  <a href="tel:+91 8767756198">+91 8767756198</a></p>
             </div>
           </Col>
           <Col size={12} sm={4} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/akshata-jedhe-7ab5b11a4%20/" target="_blank"><img src={navIcon1} alt="Icon" /></a>
-              <a href="https://github.com/akshataj28" target="_blank"><img src={navIcon2} alt="Icon" /></a>
-              <a href="https://www.instagram.com/_akshiiii._/" target="_blank"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/disha-jedhe" target="_blank"><img src={navIcon1} alt="Icon" /></a>
+              <a href="https://github.com/disha3006" target="_blank"><img src={navIcon2} alt="Icon" /></a>
+              <a href="https://www.instagram.com/disha30.06/" target="_blank"><img src={navIcon3} alt="Icon" /></a>
             </div>
           
           </Col>

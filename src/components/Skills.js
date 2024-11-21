@@ -10,8 +10,8 @@ import img1 from "../assets/img/javascript.png";
 import img2 from "../assets/img/html.png";
 import img3 from "../assets/img/css.png";
 import img4 from "../assets/img/react.png";
-import img5 from "../assets/img/angular.png";
-import img6 from "../assets/img/python.png";
+import img5 from "../assets/img/javas-img.png";
+import img6 from "../assets/img/tailwind-img.png";
 import img7 from "../assets/img/android.png";
 
 
@@ -60,7 +60,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Data science</h5>
+                                <h5>UI/UX</h5>
                             </div>
                         </Carousel>
                         <br></br>
@@ -90,11 +90,11 @@ export const Skills = () => {
                             </div>
                             <div className="item2">
                                 <img src={img5} alt="Image" />
-                                <h5>Angular</h5>
+                                <h5>Java</h5>
                             </div>
                             <div className="item">
                                 <img src={img6} alt="Image" />
-                                <h5>Python</h5>
+                                <h5>Tailwind</h5>
                             </div>
                             <div className="item">
                                 <img src={img7} alt="Image" />
